@@ -1,0 +1,111 @@
+*, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: unset;
+  padding: unset;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 80%;
+  color: white;
+  margin-left: 10%;
+  font-family: "Cocogoose";
+  padding-top: 10%;
+}
+.nav__logo {
+  float: left;
+}
+.nav__burger {
+  float: right;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 50px;
+}
+.bar1 {
+  width: 25px;
+  margin-left: 5px;
+}
+.bar2 {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.gallery {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+.gallery__image {
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(rgba(50, 50, 50, 0.1) 0%, black), url("../images/japan.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.gallery__content {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.gallery__content-header, .gallery__content-subheader {
+  text-transform: uppercase;
+}
+.gallery__content-header {
+  font-family: "Cocogoose";
+}
+.gallery__content-subheader {
+  font-family: "Delio-trial";
+}
+.gallery__content-para {
+  font-family: "DM Sans";
+}
+
+.seemore {
+  text-align: center;
+  font-family: "Cocogoose";
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  color: white;
+}
+.seemore__outer {
+  padding: 0.75rem 2.75rem;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 25px;
+}
+.seemore__outer-header {
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+}
+
+@font-face {
+  font-family: Sunday;
+  src: url("../fonts/Sunday.ttf");
+}
+@font-face {
+  font-family: Cocogoose;
+  src: url("../fonts/Cocogoose.ttf");
+}
+@font-face {
+  font-family: Sonder;
+  src: url("../fonts/Sonder.otf");
+}
+
+/*# sourceMappingURL=style.css.map */
