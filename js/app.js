@@ -5,3 +5,8 @@ $(".seemore__outer").on("click",function(){
         "-webkit-transform": "scale(" + val + ")"
     });
 });
+
+function onMenuClick() {
+    document.getElementById("nav__burger").classList.toggle("change");
+    document.getElementById("nav__slide").classList.toggle("active");
+}
