@@ -64,9 +64,10 @@ html {
   color: white;
   margin-left: 10%;
   font-family: "Cocogoose";
-  padding-top: 10%;
+  padding-top: 50px;
 }
 .nav__logo {
+  cursor: pointer;
   float: left;
   height: 50px;
   width: 50px;
@@ -74,6 +75,7 @@ html {
 .nav__logo img {
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-in-out;
 }
 .nav__burger {
   cursor: pointer;
@@ -120,12 +122,14 @@ html {
 
 .change .bar0 {
   transform: translateY(4px) rotateZ(-45deg);
+  background-color: black;
 }
 
 .change .bar2 {
   transform: translateY(-6px) rotateZ(45deg);
   width: 30px;
   margin-left: 0;
+  background-color: black;
 }
 
 .change .bar1 {
@@ -234,6 +238,19 @@ html {
 
   .seemore__outer-header {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .gallery__content-para {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  .gallery__content-para {
+    font-size: 2rem;
+    width: 556px;
+    margin: auto;
   }
 }
 
