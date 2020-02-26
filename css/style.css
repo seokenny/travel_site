@@ -273,6 +273,28 @@ html {
   color: red;
 }
 
+footer {
+  height: 250px;
+  width: 100%;
+  margin-top: 75px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8)), url("../images/japan.jpg");
+  background-image: url("../images/japan.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#backtotop {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 3px gray;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
 @font-face {
   font-family: Sunday;
   src: url("../fonts/Sunday.ttf");

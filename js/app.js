@@ -22,11 +22,14 @@ function onMenuClick() {
 
 $("#logo_image").mouseover(function(){
     document.getElementById("logo_image").src = "images/logoblack.png";
-    console.log("asdasd");
     setTimeout(function(){window.location.href='japan.html'},2000);
 });
 
 $("#logo_image").mouseout(function(){
     document.getElementById("logo_image").src = "images/logo.png";
-    console.log("asdasd");
+});
+
+$("#backtotop").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
 });
