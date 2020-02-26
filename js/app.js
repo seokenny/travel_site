@@ -23,6 +23,7 @@ function onMenuClick() {
 $("#logo_image").mouseover(function(){
     document.getElementById("logo_image").src = "images/logoblack.png";
     console.log("asdasd");
+    setTimeout(function(){window.location.href='japan.html'},2000);
 });
 
 $("#logo_image").mouseout(function(){
