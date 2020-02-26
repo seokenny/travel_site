@@ -9,9 +9,13 @@
 
 #container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
+    &.container_japan {
+        overflow-y: unset !important;
+    }
 }
 
 .nav {
@@ -113,10 +117,10 @@
     }
     &__content {
         width: 75%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
         text-align: center;
         &-header, &-subheader {
             text-transform: uppercase;
@@ -140,9 +144,6 @@
 .information {
     width: 75%;
     margin-left: 12.5%;
-    
-    &__japan {
-    }
     & h3 {
         font-size: 5rem;
     }
@@ -185,8 +186,7 @@
     height: 100vh;
     background-color: white;
     position: absolute;
-    height: 0;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
 }
 
@@ -331,4 +331,21 @@ footer {
             }
         }
     }
+}
+
+.slick-content {
+    font-size: 3rem;
+    background-color: coral;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.center {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: 299;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

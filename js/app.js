@@ -1,8 +1,32 @@
+// $(".seemore__outer").on("click",function(){
+//     var val = "1.3";
+//     $(".gallery__image").css({
+//         transition: "all .5s ease",
+//         "-webkit-transform": "scale(" + val + ")"
+//     });
+// });
+
+$(document).ready(function(){
+    $('.center').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        useTransform: true,
+        cssEase: 'ease-in-out',
+        arrows: false,
+        dots: false,
+      });
+});
+
+
 $(".seemore__outer").on("click",function(){
-    var val = "1.3";
-    $(".gallery__image").css({
-        transition: "all .5s ease",
-        "-webkit-transform": "scale(" + val + ")"
+    $("#gallery__content-japan").css({
+        transition: "all .3s ease",
+        left: "-100%"
+    });
+    $("#gallery__content-israel").css({
+        transition: "all .3s  ease",
+        right: 0
     });
 });
 
@@ -20,9 +44,16 @@ function onMenuClick() {
     }
 }
 
+$("#logo_image").on("click",function(){
+    $(".slider").css({
+        transition: "all .5s ease",
+        bottom: 0
+    });
+    setTimeout(function(){window.location.href='japan.html'},500);
+});
+
 $("#logo_image").mouseover(function(){
     document.getElementById("logo_image").src = "images/logoblack.png";
-    setTimeout(function(){window.location.href='japan.html'},2000);
 });
 
 $("#logo_image").mouseout(function(){
