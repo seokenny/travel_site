@@ -107,6 +107,9 @@
         background-image: radial-gradient( rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 1)), url("../images/japan.jpg");
         background-size: cover;
         background-position: center;
+        &--japan {
+            background-image: url("../images/japan.jpg");
+        }
     }
     &__content {
         width: 75%;
@@ -131,6 +134,22 @@
             font-family: "DM Sans";
             font-size: 1.5rem;
         }
+    }
+}
+
+.information {
+    width: 75%;
+    margin-left: 12.5%;
+    
+    &__japan {
+    }
+    & h3 {
+        font-size: 5rem;
+    }
+    & p {
+        font-size: 2rem;
+        font-family: "DM Sans";
+        margin-bottom: 20px;
     }
 }
 
@@ -171,6 +190,47 @@
     left: 0;
 }
 
+.liner {
+    width: 75%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 6px 0;
+    &1 {
+        margin: 6px 0 15px 15px;
+    }
+}
+
+.image_box {
+    width: 100%;
+    padding-top: 50%;
+    margin: 15px 0;
+    &0 {
+        background-image: url("../images/j0.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &1 {
+        background-image: url("../images/j1.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &2 {
+        background-image: url("../images/j2.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
+.row {
+    margin-top: 75px;
+    &__image {
+        margin: 40px 0;
+    }
+}
+
 .cities {
     color: red;
 }
@@ -204,6 +264,9 @@
 //     50% {top: 40px;}
 //     100% {top: 25px;}
 // }
+
+//JAPAN CHOSEN PAGE
+
 
 @font-face { font-family: Sunday; src: url("../fonts/Sunday.ttf"); }
 @font-face { font-family: Cocogoose; src: url("../fonts/Cocogoose.ttf"); }

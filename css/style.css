@@ -150,6 +150,9 @@ html {
   background-size: cover;
   background-position: center;
 }
+.gallery__image--japan {
+  background-image: url("../images/japan.jpg");
+}
 .gallery__content {
   width: 75%;
   position: absolute;
@@ -173,6 +176,19 @@ html {
 .gallery__content-para {
   font-family: "DM Sans";
   font-size: 1.5rem;
+}
+
+.information {
+  width: 75%;
+  margin-left: 12.5%;
+}
+.information h3 {
+  font-size: 5rem;
+}
+.information p {
+  font-size: 2rem;
+  font-family: "DM Sans";
+  margin-bottom: 20px;
 }
 
 .seemore {
@@ -210,6 +226,47 @@ html {
   height: 0;
   bottom: 0;
   left: 0;
+}
+
+.liner {
+  width: 75%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 6px 0;
+}
+.liner1 {
+  margin: 6px 0 15px 15px;
+}
+
+.image_box {
+  width: 100%;
+  padding-top: 50%;
+  margin: 15px 0;
+}
+.image_box0 {
+  background-image: url("../images/j0.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box1 {
+  background-image: url("../images/j1.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box2 {
+  background-image: url("../images/j2.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.row {
+  margin-top: 75px;
+}
+.row__image {
+  margin: 40px 0;
 }
 
 .cities {
