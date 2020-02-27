@@ -6,19 +6,6 @@
 //     });
 // });
 
-$(document).ready(function(){
-    $('.center').slick({
-        centerMode: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        useTransform: true,
-        cssEase: 'ease-in-out',
-        arrows: false,
-        dots: false,
-      });
-});
-
-
 $(".seemore__outer").on("click",function(){
     $("#gallery__content-japan").css({
         transition: "all .3s ease",

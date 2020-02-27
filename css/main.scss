@@ -122,6 +122,12 @@
         // left: 50%;
         // transform: translate(-50%, -50%);
         text-align: center;
+        &-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
         &-header, &-subheader {
             text-transform: uppercase;
         }
@@ -137,6 +143,7 @@
         &-para {
             font-family: "DM Sans";
             font-size: 1.5rem;
+            margin-top: 20px !important;
         }
     }
 }
@@ -348,4 +355,9 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.slick-active .gallery__content-header{
+    transform: scale(1.3);
+    transition: all .75s ease-in-out;
 }
