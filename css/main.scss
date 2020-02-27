@@ -117,6 +117,18 @@
         &--japan {
             background-image: url("../images/japan.jpg");
         }
+        &--israel {
+            background-image: url("../images/israel.jpg");
+        }
+        &--thailand {
+            background-image: url("../images/thailand.jpg");
+        }
+        &--vietnam {
+            background-image: url("../images/vietnam.jpg");
+        }
+        &--jordan {
+            background-image: url("../images/jordan.jpg");
+        }
     }
     &__content {
         width: 75%;
@@ -149,6 +161,21 @@
             margin-top: 20px !important;
         }
     }
+}
+
+.gi {
+    &__japan {
+        background-image: url("../images/japan.jpg");
+    }
+    // &__israel {
+    //     background-image: url("../images/israel.jpg");
+    // }
+    // &__thailand {
+    //     background-image: url("../images/thailand.jpg");
+    // }
+    // &__vietnam {
+    //     background-image: url("../images/vietnam.jpg");
+    // }
 }
 
 .information {
@@ -228,6 +255,78 @@
     }
     &2 {
         background-image: url("../images/j2.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &3 {
+        background-image: url("../images/i0.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &4 {
+        background-image: url("../images/i1.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &5 {
+        background-image: url("../images/i2.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &6 {
+        background-image: url("../images/t0.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &7 {
+        background-image: url("../images/t1.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &8 {
+        background-image: url("../images/t2.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &9 {
+        background-image: url("../images/v0.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &10 {
+        background-image: url("../images/v1.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &11 {
+        background-image: url("../images/v2.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &12 {
+        background-image: url("../images/p0.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &13 {
+        background-image: url("../images/p1.jpg");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    &14 {
+        background-image: url("../images/p2.jpg");
         background-position: center;
         background-size: cover;
         object-fit: cover;

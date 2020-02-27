@@ -160,6 +160,18 @@ html {
 .gallery__image--japan {
   background-image: url("../images/japan.jpg");
 }
+.gallery__image--israel {
+  background-image: url("../images/israel.jpg");
+}
+.gallery__image--thailand {
+  background-image: url("../images/thailand.jpg");
+}
+.gallery__image--vietnam {
+  background-image: url("../images/vietnam.jpg");
+}
+.gallery__image--jordan {
+  background-image: url("../images/jordan.jpg");
+}
 .gallery__content {
   width: 75%;
   text-align: center;
@@ -186,6 +198,10 @@ html {
   font-family: "DM Sans";
   font-size: 1.5rem;
   margin-top: 20px !important;
+}
+
+.gi__japan {
+  background-image: url("../images/japan.jpg");
 }
 
 .information {
@@ -266,6 +282,78 @@ html {
 }
 .image_box2 {
   background-image: url("../images/j2.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box3 {
+  background-image: url("../images/i0.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box4 {
+  background-image: url("../images/i1.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box5 {
+  background-image: url("../images/i2.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box6 {
+  background-image: url("../images/t0.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box7 {
+  background-image: url("../images/t1.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box8 {
+  background-image: url("../images/t2.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box9 {
+  background-image: url("../images/v0.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box10 {
+  background-image: url("../images/v1.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box11 {
+  background-image: url("../images/v2.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box12 {
+  background-image: url("../images/p0.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box13 {
+  background-image: url("../images/p1.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.image_box14 {
+  background-image: url("../images/p2.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
