@@ -31,12 +31,35 @@ function onMenuClick() {
     }
 }
 
-$("#logo_image").on("click",function(){
-    $(".slider").css({
-        transition: "all .5s ease",
-        bottom: 0
-    });
-    setTimeout(function(){window.location.href='japan.html'},500);
+// $("#gallery__content-japan").on("click",function(){
+//     $(".slider").css({
+//         transition: "all .5s ease",
+//         bottom: 0
+//     });
+//     setTimeout(function(){window.location.href='japan.html'},500);
+// });
+
+// $("#gallery__content-israel").on("click",function(){
+//     $(".slider").css({
+//         transition: "all .5s ease",
+//         bottom: 0
+//     });
+//     setTimeout(function(){window.location.href='israel.html'},500);
+// });
+
+var locations = ["japan", "israel", "vietnam", "thailand", "jordan"];
+
+$(".seemore__outer").on("click",function(){
+    var text = event.target;
+    // console.log(document.querySelector(".slick-active").children[0].children[0].id);
+    var currentLocation = document.querySelector(".slick-active").children[0].children[0].id;
+    for(var i = 0; i < locations.length; i++){
+        if(currentLocation == "gallery__content-" + locations[i]){
+            console.log("gallery__content-" + locations[i]);
+            console.log(locations[i] + '.html');
+            window.location.href=locations[i] + '.html';
+        }
+    }
 });
 
 $("#logo_image").mouseover(function(){
