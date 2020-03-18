@@ -6,6 +6,26 @@
 //     });
 // });
 
+var locations = ["japan", "israel", "vietnam", "thailand", "jordan"];
+
+// $(document).ready(function(){
+//     var checkInterval = setInterval(function(){
+//         var currentLocation = document.querySelector(".slick-active").children[0].children[0].id;
+//         for(var i = 0; i < locations.length; i++){
+//             if(currentLocation == "gallery__content-" + locations[i]){
+//                 $("#gi__japan").css({
+//                     'background-image': '-moz-linear-gradient(top,rgba(0,0,0,0)80%,rgba(0,0,0,0.65)100%), url(images/'+locations[i]+'.jpg)', 
+//                     'background-image': '-webkit-gradient(linear,left top,left bottom,color-stop(80%,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,0.65))), url(images/' + locations[i] + '.jpg)', 
+//                     'background-image': 'background-image: -webkit-linear-gradient(top,rgba(0,0,0,0)80%,rgba(0,0,0,0.65)100%), url(images/' + locations[i] + '.jpg)', 
+//                     'background-image': '-o-linear-gradient(top,rgba(0,0,0,0)80%,rgba(0,0,0,0.65)100%), url(images/' + locations[i] + '.jpg)', 
+//                     'background-image': 'linear-gradient(to bottom,rgba(0,0,0,0)80%,rgba(0,0,0,0.65)100%), url(images/' + locations[i] + '.jpg)'
+//                 });
+//             }
+//         }
+//     }, 10);
+
+// });
+
 $(".seemore__outer").on("click",function(){
     $("#gallery__content-japan").css({
         transition: "all .3s ease",
@@ -47,11 +67,7 @@ function onMenuClick() {
 //     setTimeout(function(){window.location.href='israel.html'},500);
 // });
 
-var locations = ["japan", "israel", "vietnam", "thailand", "jordan"];
-
 $(".seemore__outer").on("click",function(){
-    var text = event.target;
-    // console.log(document.querySelector(".slick-active").children[0].children[0].id);
     var currentLocation = document.querySelector(".slick-active").children[0].children[0].id;
     for(var i = 0; i < locations.length; i++){
         if(currentLocation == "gallery__content-" + locations[i]){

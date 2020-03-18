@@ -13,6 +13,12 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin fitPhoto {
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
 
 
 //MEDIA QUERY MANAGER

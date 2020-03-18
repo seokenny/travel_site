@@ -111,44 +111,22 @@
         top: 0;
         left: 0;
         height: 100vh;
-        background-image: radial-gradient( rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 1)), url("../images/japan.jpg");
+        background-image: radial-gradient( rgba(50, 50, 50, 0.3) 0%, rgba(0, 0, 0, 1)), url("../images/japan.jpg");
         background-size: cover;
         background-position: center;
-        &--japan {
-            background-image: url("../images/japan.jpg");
-        }
-        &--israel {
-            background-image: url("../images/israel.jpg");
-        }
-        &--thailand {
-            background-image: url("../images/thailand.jpg");
-        }
-        &--vietnam {
-            background-image: url("../images/vietnam.jpg");
-        }
-        &--jordan {
-            background-image: url("../images/jordan.jpg");
-        }
     }
     &__content {
         width: 75%;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         text-align: center;
         &-info {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include absCenter;
         }
         &-header, &-subheader {
             text-transform: uppercase;
         }
         &-header {
             font-family: "DM Sans";
-            font-size: 9rem;
+            font-size: 7.5rem;
             letter-spacing: .3rem;
             text-transform: unset;
         }
@@ -159,22 +137,32 @@
             font-family: "DM Sans";
             font-size: 1.5rem;
             margin-top: 20px !important;
+            width: 75%;
+            margin: auto;
         }
     }
 }
 
 .gi {
     &__japan {
-        background-image: url("../images/japan.jpg");
+        // background-image: radial-gradient( rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 1)), url("../images/japan.jpg");
+        // transition: all .5s ease-in-out;
     }
     // &__israel {
-    //     background-image: url("../images/israel.jpg");
+    //     background-image: radial-gradient( rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 1)), url("../images/israel.jpg");
+    //     transition: all .5s ease-in-out;
     // }
     // &__thailand {
-    //     background-image: url("../images/thailand.jpg");
+    //     background-image: radial-gradient( rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 1)), url("../images/thailand.jpg");
+    //     transition: all .5s ease-in-out;
     // }
     // &__vietnam {
-    //     background-image: url("../images/vietnam.jpg");
+    //     background-image: radial-gradient( rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 1)), url("../images/vietnam.jpg");
+    //     transition: all .5s ease-in-out;
+    // }
+    // &__jordan {
+    //     background-image: radial-gradient( rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 1)), url("../images/jordan.jpg");
+    //     transition: all .5s ease-in-out;
     // }
 }
 
@@ -241,96 +229,22 @@
     width: 100%;
     padding-top: 50%;
     margin: 15px 0;
-    &0 {
-        background-image: url("../images/j0.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &1 {
-        background-image: url("../images/j1.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &2 {
-        background-image: url("../images/j2.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &3 {
-        background-image: url("../images/i0.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &4 {
-        background-image: url("../images/i1.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &5 {
-        background-image: url("../images/i2.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &6 {
-        background-image: url("../images/t0.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &7 {
-        background-image: url("../images/t1.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &8 {
-        background-image: url("../images/t2.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &9 {
-        background-image: url("../images/v0.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &10 {
-        background-image: url("../images/v1.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &11 {
-        background-image: url("../images/v2.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &12 {
-        background-image: url("../images/p0.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &13 {
-        background-image: url("../images/p1.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
-    &14 {
-        background-image: url("../images/p2.jpg");
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-    }
+    @include fitPhoto;
+    &0 { background-image: url("../images/j0.jpg"); }
+    &1 { background-image: url("../images/j1.jpg"); }
+    &2 { background-image: url("../images/j2.jpg"); }
+    &3 { background-image: url("../images/i0.jpg"); }
+    &4 { background-image: url("../images/i1.jpg"); }
+    &5 { background-image: url("../images/i2.jpg"); }
+    &6 { background-image: url("../images/t0.jpg"); }
+    &7 { background-image: url("../images/t1.jpg"); }
+    &8 { background-image: url("../images/t2.jpg"); }
+    &9 { background-image: url("../images/v0.jpg"); }
+    &10 { background-image: url("../images/v1.jpg"); }
+    &11 { background-image: url("../images/v2.jpg"); }
+    &12 { background-image: url("../images/p0.jpg"); }
+    &13 { background-image: url("../images/p1.jpg"); }
+    &14 { background-image: url("../images/p2.jpg"); }
 }
 
 .row {
@@ -350,9 +264,7 @@ footer {
     margin-top: 75px;
     background-image: radial-gradient( rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, .8)), url("../images/japan.jpg");
     background-image: url("../images/japan.jpg");
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
+    @include fitPhoto;
 }
 
 #backtotop {
@@ -366,38 +278,7 @@ footer {
     right: 5%;
 }
 
-// .float_images {
-//     width: 75px;
-//     height: 75px;
-//     position: absolute;
-//     top: -10px;
-//     left: -25px;
-//     animation: firstfloat 5s infinite;
-//     &-2 {
-//         left: unset;
-//         right: -15px;
-//         top: 35px;
-//         z-index: -1;
-//         height: 50px;
-//         width: 50px;
-//         animation: secondfloat 6s infinite;
-//     }
-// }
-
-// @keyframes firstfloat {
-//     0% {top: 0px;}
-//     50% {top: -10px;}
-//     100% {top: 0px;}
-// }
-
-// @keyframes secondfloat {
-//     0% {top: 25px;}
-//     50% {top: 40px;}
-//     100% {top: 25px;}
-// }
-
 //JAPAN CHOSEN PAGE
-
 
 @font-face { font-family: Sunday; src: url("../fonts/Sunday.ttf"); }
 @font-face { font-family: Cocogoose; src: url("../fonts/Cocogoose.ttf"); }
@@ -407,7 +288,7 @@ footer {
     .gallery {
         &__content {
             &-header {
-                font-size: 15rem;
+                font-size: 9rem;
             }
             &-para {
                 font-size: 1.8rem;
