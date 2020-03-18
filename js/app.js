@@ -37,6 +37,10 @@ $(".seemore__outer").on("click",function(){
     });
 });
 
+$(document).ready(function(){
+    
+});
+
 var active = 0;
 
 function onMenuClick() {

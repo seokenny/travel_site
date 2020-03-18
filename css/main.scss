@@ -111,7 +111,7 @@
         top: 0;
         left: 0;
         height: 100vh;
-        background-image: radial-gradient( rgba(50, 50, 50, 0.3) 0%, rgba(0, 0, 0, 1)), url("../images/japan.jpg");
+        background-image: url("../images/japan.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -347,3 +347,28 @@ footer {
 .slick-slide {
     cursor: grab;
 }
+
+.backgroundChange {
+    animation: backgroundChange 10s;
+}
+
+//KEYFRAMES
+
+@keyframes backgroundChange {
+    0% {
+        background-image: url("../images/japan.jpg");
+    }
+    15% {
+        background-image: url("../images/israel.jpg");
+    }
+    100% {
+        background-image: url("../images/israel.jpg");
+    }
+}
+
+.radial {
+    background-image: radial-gradient( rgba(50, 50, 50, 0.3) 0%, rgba(0, 0, 0, 1));
+    height: 100%;
+    width: 100%;
+}
+
