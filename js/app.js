@@ -86,6 +86,7 @@ function checkLocation() {
         $(".gallery__image").removeClass("bgChangeIsrael");
         $(".gallery__image").removeClass("bgChangeIsrael2");
         $(".gallery__image").removeClass("bgChangeVietnam");
+        $(".gallery__image").removeClass("bgChangeVietnam2");
         if(currentActive == 1) {
             $(".gallery__image").addClass("bgChangeThailand");
         }
