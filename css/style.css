@@ -396,11 +396,19 @@ footer {
 }
 
 .bgChangeJapan {
-  animation: japanBG 2s;
+  animation: japanBG 1s;
 }
 
 .bgChangeIsrael {
-  animation: israelBG 2s;
+  animation: israelBG 1s;
+}
+
+.bgChangeIsrael2 {
+  animation: israelBG2 1s;
+}
+
+.bgChangeThailand {
+  animation: thailandBG 1S;
 }
 
 @keyframes japanBG {
@@ -423,6 +431,28 @@ footer {
   }
   100% {
     background-image: url("../images/israel.jpg");
+  }
+}
+@keyframes israelBG2 {
+  0% {
+    background-image: url("../images/thailand.jpg");
+  }
+  50% {
+    background-image: url("../images/israel.jpg");
+  }
+  100% {
+    background-image: url("../images/israel.jpg");
+  }
+}
+@keyframes thailandBG {
+  0% {
+    background-image: url("../images/israel.jpg");
+  }
+  50% {
+    background-image: url("../images/thailand.jpg");
+  }
+  100% {
+    background-image: url("../images/thailand.jpg");
   }
 }
 .radial {

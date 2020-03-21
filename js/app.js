@@ -55,20 +55,39 @@ $(".seemore__outer").on("click",function(){
 //     }
 // });
 
+var currentActive = 0;
+
 function checkLocation() {
     if($(".slick-active").children().children()[0].id == "gallery__content-japan"){
         $(".gallery__image").removeClass("bgChangeIsrael");
+        $(".gallery__image").removeClass("bgChangeIsrael2");
         $(".gallery__image").addClass("bgChangeJapan");
         $(".gallery__image").css(
             "background-image", "url(images/japan.jpg)"
         );
+        currentActive = 0;
     }
     else if($(".slick-active").children().children()[0].id == "gallery__content-israel"){
         $(".gallery__image").removeClass("bgChangeJapan");
-        $(".gallery__image").addClass("bgChangeIsrael");
+        $(".gallery__image").removeClass("bgChangeThailand");
+        if(currentActive == 0) {
+            $(".gallery__image").addClass("bgChangeIsrael");
+        }
+        else if(currentActive == 2) {
+            $(".gallery__image").addClass("bgChangeIsrael2");
+        }
         $(".gallery__image").css(
             "background-image", "url(images/israel.jpg)"
         );
+        currentActive = 1;
+    }
+    else if($(".slick-active").children().children()[0].id == "gallery__content-thailand"){
+        $(".gallery__image").removeClass("bgChangeIsrael");
+        $(".gallery__image").addClass("bgChangeThailand");
+        $(".gallery__image").css(
+            "background-image", "url(images/thailand.jpg)"
+        );
+        currentActive = 2;
     }
 }
 
