@@ -348,35 +348,16 @@ footer {
     cursor: grab;
 }
 
-.bgChangeJapan {
-    animation: japanBG 1s;
-}
-
-.bgChangeIsrael {
-    animation: israelBG 1s;
-}
-
-.bgChangeIsrael2 {
-    animation: israelBG2 1s;
-}
-
-.bgChangeThailand {
-    animation: thailandBG 1S;
-}
+.bgChangeJapan {animation: japanBG 1s;}
+.bgChangeIsrael {animation: israelBG 1s;}
+.bgChangeIsrael2 {animation: israelBG2 1s;}
+.bgChangeThailand {animation: thailandBG 1S;}
+.bgChangeThailand2 {animation: thailandBG2 1S;}
+.bgChangeVietnam {animation: vietnamBG 1s;}
+.bgChangeVietnam2 {animation: vietnamBG2 1s;}
+.bgChangeJordan {animation: jordanBG 1s;}
 
 //KEYFRAMES
-
-// @keyframes backgroundChange {
-//     0% {
-//         background-image: url("../images/japan.jpg");
-//     }
-//     15% {
-//         background-image: url("../images/israel.jpg");
-//     }
-//     100% {
-//         background-image: url("../images/israel.jpg");
-//     }
-// }
 
 @keyframes japanBG {
     0% {
@@ -423,6 +404,54 @@ footer {
     }
     100% {
         background-image: url("../images/thailand.jpg");
+    }
+}
+
+@keyframes thailandBG2 {
+    0% {
+        background-image: url("../images/vietnam.jpg");
+    }
+    50% {
+        background-image: url("../images/thailand.jpg");
+    }
+    100% {
+        background-image: url("../images/thailand.jpg");
+    }
+}
+
+@keyframes vietnamBG {
+    0% {
+        background-image: url("../images/thailand.jpg");
+    }
+    50% {
+        background-image: url("../images/vietnam.jpg");
+    }
+    100% {
+        background-image: url("../images/vietnam.jpg");
+    }
+}
+
+@keyframes vietnamBG2 {
+    0% {
+        background-image: url("../images/jordan.jpg");
+    }
+    50% {
+        background-image: url("../images/vietnam.jpg");
+    }
+    100% {
+        background-image: url("../images/vietnam.jpg");
+    }
+}
+
+@keyframes jordanBG {
+    0% {
+        background-image: url("../images/vietnam.jpg");
+    }
+    50% {
+        background-image: url("../images/jordan.jpg");
+    }
+    100% {
+        background-image: url("../images/jordan.jpg");
     }
 }
 

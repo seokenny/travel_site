@@ -70,6 +70,7 @@ function checkLocation() {
     else if($(".slick-active").children().children()[0].id == "gallery__content-israel"){
         $(".gallery__image").removeClass("bgChangeJapan");
         $(".gallery__image").removeClass("bgChangeThailand");
+        $(".gallery__image").removeClass("bgChangeThailand2");
         if(currentActive == 0) {
             $(".gallery__image").addClass("bgChangeIsrael");
         }
@@ -83,11 +84,42 @@ function checkLocation() {
     }
     else if($(".slick-active").children().children()[0].id == "gallery__content-thailand"){
         $(".gallery__image").removeClass("bgChangeIsrael");
-        $(".gallery__image").addClass("bgChangeThailand");
+        $(".gallery__image").removeClass("bgChangeIsrael2");
+        $(".gallery__image").removeClass("bgChangeVietnam");
+        if(currentActive == 1) {
+            $(".gallery__image").addClass("bgChangeThailand");
+        }
+        else if(currentActive == 3) {
+            $(".gallery__image").addClass("bgChangeThailand2");
+        }
         $(".gallery__image").css(
             "background-image", "url(images/thailand.jpg)"
         );
         currentActive = 2;
+    }
+    else if($(".slick-active").children().children()[0].id == "gallery__content-vietnam"){
+        $(".gallery__image").removeClass("bgChangeThailand");
+        $(".gallery__image").removeClass("bgChangeThailand2");
+        $(".gallery__image").removeClass("bgChangeJordan");
+        if(currentActive == 2) {
+            $(".gallery__image").addClass("bgChangeVietnam");
+        }
+        else if(currentActive == 4) {
+            $(".gallery__image").addClass("bgChangeVietnam2");
+        }
+        $(".gallery__image").css(
+            "background-image", "url(images/vietnam.jpg)"
+        );
+        currentActive = 3;
+    }
+    else if($(".slick-active").children().children()[0].id == "gallery__content-jordan"){
+        $(".gallery__image").removeClass("bgChangeVietnam");
+        $(".gallery__image").removeClass("bgChangeVietnam2");
+        $(".gallery__image").addClass("bgChangeJordan");
+        $(".gallery__image").css(
+            "background-image", "url(images/jordan.jpg)"
+        );
+        currentActive = 4;
     }
 }
 
