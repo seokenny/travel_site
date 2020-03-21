@@ -395,15 +395,30 @@ footer {
   cursor: grab;
 }
 
-.backgroundChange {
-  animation: backgroundChange 10s;
+.bgChangeJapan {
+  animation: japanBG 2s;
 }
 
-@keyframes backgroundChange {
+.bgChangeIsrael {
+  animation: israelBG 2s;
+}
+
+@keyframes japanBG {
+  0% {
+    background-image: url("../images/israel.jpg");
+  }
+  50% {
+    background-image: url("../images/japan.jpg");
+  }
+  100% {
+    background-image: url("../images/japan.jpg");
+  }
+}
+@keyframes israelBG {
   0% {
     background-image: url("../images/japan.jpg");
   }
-  15% {
+  50% {
     background-image: url("../images/israel.jpg");
   }
   100% {

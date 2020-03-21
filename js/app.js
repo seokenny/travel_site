@@ -37,9 +37,44 @@ $(".seemore__outer").on("click",function(){
     });
 });
 
-$(document).ready(function(){
-    
-});
+// $(document).ready(function(){
+//     console.log("rdy");
+//     if($(".slick-active").children().children()[0].id == "gallery__content-japan"){
+//         $("#gallery__content-japan").css({
+//             color: "purple"
+//         });
+//         console.log("done");
+//         console.log($(".slick-active").children().children()[0].id);
+//     }
+//     else if($(".slick-active").children().children()[0].id == "gallery__content-israel"){
+//         $("#gallery__content-israel").css({
+//             color: "purple"
+//         });
+//         console.log("done");
+//         console.log($(".slick-active").children().children()[0].id);
+//     }
+// });
+
+function checkLocation() {
+    if($(".slick-active").children().children()[0].id == "gallery__content-japan"){
+        $(".gallery__image").removeClass("bgChangeIsrael");
+        $(".gallery__image").addClass("bgChangeJapan");
+        $(".gallery__image").css(
+            "background-image", "url(images/japan.jpg)"
+        );
+    }
+    else if($(".slick-active").children().children()[0].id == "gallery__content-israel"){
+        $(".gallery__image").removeClass("bgChangeJapan");
+        $(".gallery__image").addClass("bgChangeIsrael");
+        $(".gallery__image").css(
+            "background-image", "url(images/israel.jpg)"
+        );
+    }
+}
+
+window.setInterval(function(){
+    checkLocation();
+},500);
 
 var active = 0;
 
