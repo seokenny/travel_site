@@ -118,6 +118,7 @@
     &__content {
         width: 75%;
         text-align: center;
+        position: relative;
         &-info {
             @include absCenter;
         }
@@ -461,3 +462,38 @@ footer {
     width: 100%;
 }
 
+//FLOATING
+.floating {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    // animation: float infinite 15s;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 200%;
+}
+
+.float_japan {
+    transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.float_israel {
+    transform: translate(-50%, -50%) rotate(25deg);
+}
+
+.slick-list{
+    overflow: visible !important;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

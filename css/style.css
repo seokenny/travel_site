@@ -160,6 +160,7 @@ html {
 .gallery__content {
   width: 75%;
   text-align: center;
+  position: relative;
 }
 .gallery__content-info {
   position: absolute;
@@ -519,6 +520,40 @@ footer {
   background-image: radial-gradient(rgba(50, 50, 50, 0.3) 0%, black);
   height: 100%;
   width: 100%;
+}
+
+.floating {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 200%;
+}
+
+.float_japan {
+  transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.float_israel {
+  transform: translate(-50%, -50%) rotate(25deg);
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
