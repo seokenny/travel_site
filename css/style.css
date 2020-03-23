@@ -540,6 +540,10 @@ footer {
   transform: translate(-50%, -50%) rotate(25deg);
 }
 
+.float_thailand {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
 .slick-list {
   overflow: visible !important;
 }
