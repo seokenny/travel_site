@@ -57,6 +57,10 @@ $(".seemore__outer").on("click",function(){
 
 var currentActive = 0;
 
+$("#nav__burger").on("click",function(){
+    $(".nav__slide p").toggleClass("whenSlided");
+});
+
 function checkLocation() {
     if($(".slick-active").children().children()[0].id == "gallery__content-japan"){
         $(".gallery__image").removeClass("bgChangeIsrael");
@@ -81,6 +85,7 @@ function checkLocation() {
             "background-image", "url(images/israel.jpg)"
         );
         currentActive = 1;
+        // checkFade();
     }
     else if($(".slick-active").children().children()[0].id == "gallery__content-thailand"){
         $(".gallery__image").removeClass("bgChangeIsrael");
@@ -129,6 +134,12 @@ window.setInterval(function(){
 },500);
 
 var active = 0;
+
+// function checkFade() {
+//     if(currentActive == 1){
+//         $(".gallery__content-para").toggleClass("whenSlided");
+//     }
+// }
 
 function onMenuClick() {
     document.getElementById("nav__burger").classList.toggle("change");
